@@ -1,7 +1,9 @@
 .main-container {
   float: right;
+  width: 33%;
 }
 
 .side-container {
   float: right;
+  width: 67%;
 }
