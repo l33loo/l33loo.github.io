@@ -1,1 +1,7 @@
-layout.css
+.main-container {
+  float: right;
+}
+
+.side-container {
+  float: right;
+}
