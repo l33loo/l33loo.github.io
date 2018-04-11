@@ -5,21 +5,26 @@
 <html>
 <head>
   <title>Lila Karpowicz - Résumé</title>
-  <link rel="stylesheet" href="normalize-4.1.1.css" type="text/css" />
-  <link rel="font" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="vendor/normalize-4.1.1.css" type="text/css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
   <link rel="stylesheet" href="layout.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Tajawal|Work+Sans" rel="stylesheet">
+
+  <script type="text/javascript" src="vendor/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="scripts/app.js"></script>
+
 </head>
 
 <body>
 <div>
   <div class="side">
     <div id="contact">
-      <div class><i class="far fa-envelope"></i><span> karpowicz.lila@gmail.com</span></div>
-      <div><i class="fas fa-phone-square"></i><span> 778.557.6440</span></div>
-      <div><i class="fas fa-map-marker"></i><span> victoria, bc</span></div>
-      <div><a href="https://ca.linkedin.com/in/lila-karpowicz-6a4893ba"><i class="fab fa-linkedin-in"></i>lila</a></div>
-      <div><i class="fab fa-github"></i><a href="https://github.com/l33loo">l33loo</a></div>
+      <div id="email" class="contact-el">karpowicz.lila@gmail.com <i class="far fa-envelope"></i></div>
+      <div id="phone" class="contact-el">778.557.6440 <i class="fas fa-phone"></i></div>
+      <div id="city" class="contact-el">victoria, bc <i class="fas fa-map-marker"></i></div>
+      <div id="github" class="contact-el"><a href="https://github.com/l33loo">l33loo <i class="fab fa-github"></i></a></div>
+      <div id="linkedin" class="contact-el"><a href="https://ca.linkedin.com/in/lilakar">lilakar <i class="fab fa-linkedin-in"></i></a></div>
     </div>
 
     <div class="category">
@@ -49,23 +54,23 @@
       <div class="h2">education</div>
 
       <div class="element-first">
-        <div class="h3">web development diploma</div>
-        <div>may 2018 | lighthouse labs, victoria</div>
+        <div class="h3">web development diploma (c)</div>
+        <div>may 2018 || lighthouse labs, victoria</div>
       </div>
 
       <div class="element">
         <div class="h3">MA bioethics</div>
-        <div> 2017 | université de montréal</div>
+        <div> 2017 || université de montréal</div>
       </div>
 
       <div class="element">
         <div class="h3">knowledge translation certificate</div>
-        <div>2017 | sickkids KT program, toronto</div>
+        <div>2017 || sickkids KT program, toronto</div>
       </div>
 
       <div class="element">
         <div class="h3">BSc psychology, behavioural neuroscience</div>
-        <div>2010 | concordia university</div>
+        <div>2010 || concordia university</div>
       </div>
     </div>
 
@@ -100,19 +105,20 @@
       <div class="h2">portfolio</div>
 
       <div class="element">
-        <div class="h3"><a href="https://github.com/l33loo/altmaps">altmaps</a></div>
+        <div id="altmaps" class="h3"><a href="https://github.com/l33loo/altmaps"><i class="fas fa-link"></i> altmaps</a></div>
         <div class="h4"> 2018 || semantic UI | javascript | jQuery | ejs | nodeJS | expressJS | google maps api | postgreSQL</div>
-        <div>app for collaborative map-making. group assignment to practice full-stack dev. contribution: database, registration, login, profile, saving map pins, pin info window.</div>
+        <div class="bullet">&rsaquo;&rsaquo; app for collaborative map-making. group assignment to practice full-stack dev.</div>
+        <div class="bullet">&rsaquo;&rsaquo; contribution: database, registration, login, profile, saving map pins, pin info window.</div>
       </div>
       <div class="element">
-        <div class="h3"><a href="https://github.com/l33loo/tweeter">tweeter</a></div>
+        <div id="tweeter" class="h3"><a href="https://github.com/l33loo/tweeter"><i class="fas fa-link"></i> tweeter</a></div>
         <div class="h4">2018 || javascript | jQuery | ejs | nodeJS | espressJS | mongoDB</div>
-        <div> twitter clone. solo assignment to practice front-end dev.</div>
+        <div class="bullet">&rsaquo;&rsaquo; twitter clone. solo assignment to practice front-end dev.</div>
       </div>
       <div class="element">
-        <div class="h3"><a href="https://github.com/l33loo/TinyApp">tinyApp</a></div>
+        <div id="tinyapp" class="h3"><a href="https://github.com/l33loo/TinyApp"><i class="fas fa-link"></i> tinyApp</a></div>
         <div class="h4">2018 || javascript | jQuery | ejs | nodeJS | expressJS</div>
-        <div> url shortener. solo assignment to practice back-end dev.</div>
+        <div class="bullet">&rsaquo;&rsaquo; url shortener. solo assignment to practice back-end dev.</div>
       </div>
     </div>
 
@@ -121,43 +127,42 @@
 
       <div class="element">
         <div class="h3">research ethics analyst</div>
-        <div class="h4">mar 2016 - apr 2017 (contract) | sickkids, toronto</div>
-          <div>provided feedback on the new electronic ethics submission system.</div>
-          <div>coordinated ethics evaluations of research. ran a tight ship despite a severe lack of resources.</div>
-          <div>provided responsive and reassuring customer service to an anxious research community.</div>
+        <div class="h4">mar 2016 - apr 2017 (contract) || sickkids, toronto</div>
+        <div class="bullet">&rsaquo;&rsaquo; provided feedback on the new electronic ethics submission system.</div>
+        <div class="bullet">&rsaquo;&rsaquo; coordinated ethics evaluations of research. ran a tight ship despite a severe lack of resources.</div>
+        <div class="bullet">&rsaquo;&rsaquo; provided responsive and reassuring customer service to an anxious research community.</div>
       </div>
 
       <div class="element">
         <div class="h3">planning, programming, and evaluation officer</div>
-        <div class="h4">oct 2013 - jan 2014 (contract) | university of montreal's hospital research centre</div>
-          <div>streamlined research ethics processes.</div>
-          <div>developed standard operating procedures for the research ethics department.</div>
+        <div class="h4">oct 2013 - jan 2014 (contract) || university of montreal's hospital research centre</div>
+        <div class="bullet">&rsaquo;&rsaquo; streamlined research ethics processes.</div>
+        <div class="bullet">&rsaquo;&rsaquo; developed standard operating procedures for the research ethics department.</div>
       </div>
 
       <div class="element">
         <div class="h3">research ethics coordinator</div>
-        <div class="h4">apr 2012 – dec 2012 (mat leave replacement) | (1) montreal’s director of public health, (2) rivière-des-prairies hospital</div>
-          <div>managed (at location 2) and coordinated (at location 1) activites of the research ethics department efficiently.</div>
-          <div>evaluated research and produced reports with an exceptional attention to detail.</div>
+        <div class="h4">apr 2012 – dec 2012 (mat leave replacement) || (1) montreal’s director of public health, (2) rivière-des-prairies hospital</div>
+        <div class="bullet">&rsaquo;&rsaquo; managed (at location 2) and coordinated (at location 1) activites of the research ethics department efficiently.</div>
+        <div class="bullet">&rsaquo;&rsaquo; evaluated research and produced reports with an exceptional attention to detail.</div>
       </div>
-<div class="category">
+    </div>
+
+    <div class="category">
       <div class="h2">volunteer work</div>
 
       <div class="element">
-        <div class="h3">greeter &amp; grant writer</div>
-        <div class="h4">june 2017 - feb 2018 | anawim house</div>
-        <div>made guests (street community) feel at home</div>
-      </div>
+      <div class="h3">greeter &amp; grant writer</div>
+      <div class="h4">june 2017 - feb 2018 || anawim house</div>
+      <div class="bullet">&rsaquo;&rsaquo; made guests (street community) feel at home</div>
+    </div>
 
       <div class="element">
         <div class="h3">santa's elf</div>
-        <div class="h4">dec 2016 | canada post</div>
-        <div>helped santa respond to letters</div>
+        <div class="h4">dec 2016 || canada post</div>
+        <div class="bullet">&rsaquo;&rsaquo; helped santa respond to letters</div>
       </div>
-
     </div>
-    </div>
-
   </div>
 </div>
 
