@@ -1,46 +1,45 @@
 body {
   font-family: 'Tajawal', sans-serif;
   overflow-wrap: break-word;
-
-   size: 7in 9.25in;
-   margin: 27mm 16mm 27mm 16mm;
+  font-size: 0.8em
 }
 
 .main {
   float: right;
-  width: 70%;
+  width: 73%;
   padding: 10px;
 }
 
 .side {
   float: left;
+  text-align: right;
   width: 20%;
   background-color: #ecebec;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   font-size: 1em;
-  padding-bottom: 5em;
+  padding-bottom: 1.2em;
   /*border-right: 5px dashed #764f9e;*/
 }
 
 .side .h2 {
   color: purple;
-  font-size: 1.3em;
+  font-size: 1.2em;
   padding-bottom: 3px;
 
 }
 
 .side .h3 {
-  font-size: 1.15em;
+  font-size: 1.1em;
 }
 
 .main .h2 {
-  font-size: 2em;
+  font-size: 1.25em;
   border-bottom: 2px solid purple;
 }
 
 .main .h3 {
-  font-size: 1.3em;
+  font-size: 1.15em;
 }
 
 .main .h4 {
@@ -48,13 +47,9 @@ body {
   padding-bottom: 3px;
 }
 
-.current-title {
-  font-size: 1.75em;
-}
-
 #about {
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .h1, .h2 {
@@ -63,7 +58,7 @@ margin-top: 15px;
 }
 
 .h1 {
-  font-size: 5em;
+  font-size: 3em;
   overflow-wrap: break-word;
 }
 
@@ -77,12 +72,9 @@ margin-top: 15px;
 .side .element {
   padding-top: 15px;
 }
-#name .current-title {
+.current-title {
   border-bottom: 5px solid purple;
-}
-
-#name {
-  /*color: purple;*/
+  font-size: 1.25em;
 }
 
 .main .element {
@@ -90,10 +82,10 @@ margin-top: 15px;
 }
 
 #contact {
-  padding-top: 1.15em;
-  padding-bottom: 3em;
-  text-align: right;
-  font-size: 1.15em;
+  padding-bottom: 2em;
+  padding-top: 3em;
+  /*text-align: center;*/
+  font-size: 1em;
   font-weight: bold;
 }
 
@@ -108,6 +100,7 @@ margin-top: 15px;
 @media print {
   html {
    size: 7in 9.25in;
-   margin: 27mm 16mm 27mm 16mm;
+   margin: 0;
+   /*margin: 27mm 16mm 27mm 16mm;*/
 }
 }
