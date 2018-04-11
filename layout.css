@@ -6,14 +6,14 @@ body {
 
 .main {
   float: right;
-  width: 68%;
+  width: 76%;
   padding: 10px;
 }
 
 .side {
   float: left;
   text-align: right;
-  width: 22%;
+  width: 24%;
   background-color: #ecebec;
   padding-right: 15px;
   padding-left: 15px;
