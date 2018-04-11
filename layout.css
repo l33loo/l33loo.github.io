@@ -2,6 +2,7 @@ body {
   font-family: 'Tajawal', sans-serif;
   overflow-wrap: break-word;
   font-size: 0.8em;
+  size: 7in 9.25in;
 }
 
 .main {
@@ -18,7 +19,6 @@ body {
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 2.3em;
-  padding-bottom: 2em;
   border-radius: 10px;
   font-size: 1em;
 }
@@ -127,13 +127,21 @@ i {
 
 @media print {
   html {
-   size: 7in 9.25in;
-   margin: 0;
+    margin: 0;
+  }
+
+  .side {
+    padding-bottom: 2em;
   }
 }
 
-@media screen {
+@media screen and (min-width: 11in) {
   body {
-    width: 9in;
+    max-width: 90%;
+    zoom: 150%;
+  }
+
+  .side {
+    padding-bottom: 5em;
   }
 }
