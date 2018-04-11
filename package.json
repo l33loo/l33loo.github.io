@@ -1,0 +1,23 @@
+{
+  "name": "l33loo.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l33loo/l33loo.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l33loo/l33loo.github.io/issues"
+  },
+  "homepage": "https://github.com/l33loo/l33loo.github.io#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
