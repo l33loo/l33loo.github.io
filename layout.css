@@ -1,9 +1,113 @@
-.main-container {
-  float: right;
-  width: 33%;
+body {
+  font-family: 'Tajawal', sans-serif;
+  overflow-wrap: break-word;
+
+   size: 7in 9.25in;
+   margin: 27mm 16mm 27mm 16mm;
 }
 
-.side-container {
+.main {
+  float: right;
+  width: 70%;
+  padding: 10px;
+}
+
+.side {
   float: left;
-  width: 67%;
+  width: 20%;
+  background-color: #ecebec;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  padding-bottom: 5em;
+  /*border-right: 5px dashed #764f9e;*/
+}
+
+.side .h2 {
+  color: purple;
+  font-size: 1.3em;
+  padding-bottom: 3px;
+
+}
+
+.side .h3 {
+  font-size: 1.15em;
+}
+
+.main .h2 {
+  font-size: 2em;
+  border-bottom: 2px solid purple;
+}
+
+.main .h3 {
+  font-size: 1.3em;
+}
+
+.main .h4 {
+  font-size: 1em;
+  padding-bottom: 3px;
+}
+
+.current-title {
+  font-size: 1.75em;
+}
+
+#about {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+.h1, .h2 {
+font-family: 'Work Sans', sans-serif;
+margin-top: 15px;
+}
+
+.h1 {
+  font-size: 5em;
+  overflow-wrap: break-word;
+}
+
+.h1, .h2, .h3, .h4 {
+  font-weight: bold;
+}
+
+.side .category {
+  /*text-align: right;*/
+}
+.side .element {
+  padding-top: 15px;
+}
+#name .current-title {
+  border-bottom: 5px solid purple;
+}
+
+#name {
+  /*color: purple;*/
+}
+
+.main .element {
+  padding-top: 15px;
+}
+
+#contact {
+  padding-top: 1.15em;
+  padding-bottom: 3em;
+  text-align: right;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+/*#name {
+  overflow-wrap: break-word;
+}*/
+
+/*.main, .side {
+  padding: 1px;
+}*/
+
+@media print {
+  html {
+   size: 7in 9.25in;
+   margin: 27mm 16mm 27mm 16mm;
+}
 }
