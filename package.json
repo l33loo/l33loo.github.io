@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/l33loo/l33loo.github.io/issues"
   },
-  "homepage": "https://github.com/l33loo/l33loo.github.io#readme"
+  "homepage": "https://github.com/l33loo/l33loo.github.io#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
