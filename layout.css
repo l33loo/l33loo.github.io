@@ -16,7 +16,9 @@ body {
   text-align: right;
   width: 24%;
   background-color: #ecebec;
-  padding-right: 2.3em 15px 15px 7em;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 2.3em;
   border-radius: 10px;
   font-size: 1em;
 }
@@ -129,7 +131,7 @@ i {
   }
 
   .side {
-    padding-bottom: 2em;
+    padding-bottom: 4em;
   }
 }
 
@@ -137,5 +139,9 @@ i {
   body {
     max-width: 90%;
     zoom: 150%;
+  }
+
+  .side {
+    padding-bottom: 7em;
   }
 }
