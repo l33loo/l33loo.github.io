@@ -16,7 +16,7 @@ body {
   text-align: right;
   width: 24%;
   background-color: #ecebec;
-  padding-right: 2.3em 15px 15px 4em;
+  padding-right: 2.3em 15px 15px 7em;
   border-radius: 10px;
   font-size: 1em;
 }
@@ -137,9 +137,5 @@ i {
   body {
     max-width: 90%;
     zoom: 150%;
-  }
-
-  .side {
-    padding-bottom: 5em;
   }
 }
